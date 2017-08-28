@@ -1,7 +1,10 @@
 {
-  "name": "FAMA Store",
+  "name": "famastore",
   "version": "1.1.1",
-  "description": "An inspius product",
+  "description": "Mobile commerce ionic app",
+  "repository": "https://github.com/samilyos/famastore",
+  "logo": "https://github.com/samilyos/famastore/blob/master/www/img/logo.png",
+  "keywords": ["ionic", "app", "wordpress"],
   "dependencies": {
     "cordova-ios": "^4.4.0",
     "cordova-plugin-apprate": "^1.3.0",
