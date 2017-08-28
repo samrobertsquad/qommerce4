@@ -1,0 +1,52 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-apprate": {
+            "PACKAGE_NAME": "FAMA Store"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "FAMA Store"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "FAMA Store"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "FAMA Store"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "FAMA Store"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "FAMA Store"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "FAMA Store"
+        },
+        "cordova-plugin-x-socialsharing": {
+            "PACKAGE_NAME": "FAMA Store"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "FAMA Store"
+        },
+        "phonegap-plugin-push": {
+            "PACKAGE_NAME": "FAMA Store"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "FAMA Store"
+        },
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "FAMA Store"
+        },
+        "es6-promise-plugin": {
+            "PACKAGE_NAME": "FAMA Store"
+        }
+    }
+}
