@@ -69,6 +69,7 @@
     "platforms": [
       "ios",
       "windows"
-    ]
+    ],
+    "license": "FAMA"
   }
 }
