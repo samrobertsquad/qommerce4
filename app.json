@@ -2,6 +2,6 @@
     "name": "FAMA Store",
     "description": "Mobile commerce ionic app",
     "repository": "https://github.com/samilyos/famastore",
-    "logo": "http://pathToYourLogo.png",
+    "logo": "https://github.com/samilyos/famastore/blob/master/www/img/logo.png",
     "keywords": ["ionic", "app", "wordpress"]
 }
