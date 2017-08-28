@@ -1,0 +1,7 @@
+{
+    "name": "FAMA Store",
+    "description": "Mobile commerce ionic app",
+    "repository": "https://github.com/samilyos/famastore",
+    "logo": "http://pathToYourLogo.png",
+    "keywords": ["ionic", "app", "wordpress"]
+}
