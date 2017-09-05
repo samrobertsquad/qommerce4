@@ -1,9 +1,5 @@
 <ion-view title="{{$root.appLanguage.CATEGORIES_TEXT}}">
 	<ion-content class="has-footer">
-		<ion-refresher
-			pulling-text="Pull to refresh..."
-			on-refresh="refreshCategoryData()">
-		</ion-refresher>
 		<div class="category-list">
 			<div class="category-item" ng-repeat="category in categoryData" ng-click="openCategory({{category.id}})">
 				<div class="image">
