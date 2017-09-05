@@ -3,6 +3,10 @@
 		<img class="home-logo" src="img/logo.png">
 	</ion-nav-title>
 	<ion-content class="has-footer">
+		<ion-refresher
+			pulling-text="Pull to refresh..."
+			on-refresh="refreshCategoryData()">
+		</ion-refresher>
 		<ion-slide-box  class="home-slider" on-slide-changed="slideHasChanged($index)">
 			<ion-slide>
 				<div class="slider-img">
