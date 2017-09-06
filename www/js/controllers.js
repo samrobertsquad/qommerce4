@@ -160,7 +160,7 @@ angular.module('starter.controllers', ['ionic-ratings'])
 		$scope.pageProduct = 1;
 		$scope.productData = [];
 		$scope.canLoadMoreProductData = true;
-		$scope.$broadcast('scroll.refreshComplete');
+		$scope.getProductData($scope.pageProduct);
 	};
 })
 
