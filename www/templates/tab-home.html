@@ -5,7 +5,7 @@
 	<ion-content class="has-footer">
 		<ion-refresher
 			pulling-text="Pull to refresh..."
-			on-refresh="refreshProductData()">
+			(ionRefresh)="doRefresh($event)">
 		</ion-refresher>
 		<ion-slide-box  class="home-slider" on-slide-changed="slideHasChanged($index)">
 			<ion-slide>
