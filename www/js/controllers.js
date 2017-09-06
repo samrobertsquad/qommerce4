@@ -156,6 +156,12 @@ angular.module('starter.controllers', ['ionic-ratings'])
 		$scope.getProductData($scope.pageProduct);
 	};
 	$scope.loadMoreProductData();
+	$scope.doRefresh = function() {
+		$scope.pageProduct = 1;
+		$scope.productData = [];
+		$scope.canLoadMoreProductData = true;
+		$scope.$broadcast('scroll.refreshComplete');
+	};
 })
 
 .controller('SingleCategoryCtrl', function($scope, $stateParams, $state, ProductService) {
