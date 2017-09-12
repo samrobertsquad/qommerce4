@@ -1,4 +1,4 @@
-﻿@charset "UTF-8";
+@charset "UTF-8";
 /*
 To customize the look and feel of Ionic, you can override the variables
 in ionic's _variables.scss file.
@@ -2978,6 +2978,7 @@ $dark:                            #444 !default;
 .ion-xbox:before {
   content: ""; }
 
+
 /**
  * Resets
  * --------------------------------------------------
@@ -3927,11 +3928,11 @@ a.subdued {
       background-image: linear-gradient(180deg, #ddd, #ddd 50%, transparent 50%); }
   .bar.bar-stable {
     border-color: #b2b2b2;
-    background-color: #fdbf16;
+    background-color: #fdfdfd;
     background-image: linear-gradient(0deg, #b2b2b2, #b2b2b2 50%, transparent 50%);
     color: #444; }
     .bar.bar-stable .title {
-      color: #444; }
+      color: #022f45; }
     .bar.bar-stable.bar-footer {
       background-image: linear-gradient(180deg, #b2b2b2, #b2b2b2 50%, transparent 50%); }
   .bar.bar-positive {
@@ -4993,9 +4994,10 @@ ion-tabs.tabs-striped.tabs-color-active-stable .tab-item.tab-item-active, ion-ta
   color: #f8f8f8; }
 
 ion-tabs.tabs-color-active-positive .tab-item {
-  color: #444; }
+  color: #022f45;
+  }
   ion-tabs.tabs-color-active-positive .tab-item.tab-item-active, ion-tabs.tabs-color-active-positive .tab-item.active, ion-tabs.tabs-color-active-positive .tab-item.activated {
-    color: #2b2b2b; }
+    color: #022f45; }
 
 ion-tabs.tabs-striped.tabs-color-active-positive .tab-item.tab-item-active, ion-tabs.tabs-striped.tabs-color-active-positive .tab-item.active, ion-tabs.tabs-striped.tabs-color-active-positive .tab-item.activated {
   border-color: #d93b49;
@@ -5707,7 +5709,7 @@ ion-tabs.tabs-striped.tabs-color-active-dark .tab-item.tab-item-active, ion-tabs
 .item {
   border-color: #ddd;
   background-color: #fff;
-  color: #444;
+  color: #022f45;
   position: relative;
   z-index: 2;
   display: block;
@@ -5807,7 +5809,7 @@ ion-tabs.tabs-striped.tabs-color-active-dark .tab-item.tab-item-active, ion-tabs
 .item .item-content.active,
 .item .item-content.activated {
   border-color: #ccc;
-  background-color: #15181c; }
+  background-color: #f2f2f2; }
   .item.active.item-complex > .item-content,
   .item.activated.item-complex > .item-content,
   .item-complex.active .item-content.item-complex > .item-content,
@@ -6007,7 +6009,8 @@ button.item.item-complex {
   z-index: 2;
   padding: 16px 49px 16px 16px;
   border: none;
-  background-color: #fff; }
+  background-color: #fff;
+  }
 
 a.item-content {
   display: block;
@@ -8688,14 +8691,14 @@ progress {
         color: #fff; }
   .button.button-positive {
     border-color: transparent;
-    background-color: #2b2b2b;
+    background-color: #022f45;
     color: #fff; }
     .button.button-positive:hover {
       color: #fff;
       text-decoration: none; }
     .button.button-positive.active, .button.button-positive.activated {
-      border-color: #fdbf16;
-      background-color: #fdbf16;     color: #2b2b2b;}
+      border-color: #022f45;
+      background-color: #f2f2f2;     color: #022f45;}
     .button.button-positive.button-clear {
       border-color: transparent;
       background: none;
@@ -12211,7 +12214,7 @@ a.button {
   .is-header .shoppingcart i {
     line-height: 47px;
     font-size: 27px;
-    color: #2b2b2b;
+    color: #022f45;
     display: inline-block;
     margin-top: 3px; }
   .is-header .shoppingcart .count {
@@ -12228,7 +12231,7 @@ a.button {
     right: -8px; }
 
 .is-header .bar-stable .button.button-clear {
-  color: #2b2b2b; }
+  color: #022f45; }
 
 .home-logo {
   max-width: 162px;
@@ -12250,7 +12253,7 @@ a.button {
   margin: 16px auto 0px auto; }
 
 .home-page .home-slider .slider-pager .slider-pager-page {
-  color: #fdbf16;
+  color: #18739f;
   opacity: 1; }
   .home-page .home-slider .slider-pager .slider-pager-page .icon:before {
     content: "\f401"; }
@@ -12280,14 +12283,15 @@ a.button {
       margin-left: 130px; }
 
 .is-slidemenu {
-  background: rgba(43, 51, 61, 0.95);
+  background: rgba(253, 253, 253, 0.95);
   color: #fff; }
   .is-slidemenu .item {
     background: transparent;
-    color: #fdbf16;
+    color: #022f45;
     border: 0;
     position: relative;
-    overflow: hidden; }
+    overflow: hidden;
+    }
     .is-slidemenu .item [class*="icon"] {
       margin-right: 20px;
       position: relative;
@@ -12312,12 +12316,12 @@ a.button {
         background: #be3536;
         z-index: 12; }
   .is-slidemenu .header-menu {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgb(0, 60, 107);
     border-bottom: 0;
     height: auto;
     display: block; }
     .is-slidemenu .header-menu .link {
-      color: #fdbf16;
+      color: #f2f2f2;
       text-decoration: none;
       text-transform: uppercase;
       font-weight: 700;
@@ -12329,7 +12333,7 @@ a.button {
         position: absolute;
         width: 1px;
         height: 28px;
-        background: #303842;
+        background: #f2f2f2;
         right: 0;
         top: 50%;
         margin-top: -14px; }
@@ -12807,7 +12811,7 @@ dd {
   padding: 10px 5px; }
   .category-list .category-item {
     text-align: center;
-    width: 50%;
+    width: 100%;
     position: relative;
     display: block;
     padding: 0 5px;
@@ -12815,14 +12819,15 @@ dd {
     float: left;
     margin-bottom: 10px;
     border: 0;
-    background: transparent; }
+    background: transparent;
+    }
     .category-list .category-item:nth-child(2n+1) {
       clear: left; }
     .category-list .category-item .image {
-      width: 70%;
-      margin: 35px auto;
+      width: 100%;
+      margin: 15px auto -15px auto;
       position: relative;
-      margin-bottom: 5px; }
+      }
       .category-list .category-item .image:after {
         position: absolute;
         top: 0;
@@ -12831,17 +12836,21 @@ dd {
         bottom: 0;
         width: 100%;
         height: 100%;
-        border: 2px solid #f9e6b4;
-        box-shadow: 2px 2px 9px #888888;        content: "";
+        border: 0px solid #c4e2fb;
+        box-shadow: 2px 2px 9px #ececec;        content: "";
         display: block;
-        border-radius: 100%; }
+        border-radius: 0; }
       .category-list .category-item .image img {
         width: 100%;
-        border-radius: 100%;
-        display: block; }
+        border-radius: 0;
+        display: block;
+        }
     .category-list .category-item .title {
       font-weight: 700;
-      text-transform: uppercase;       margin-top: 15px;}
+      text-transform: uppercase;
+      margin-top: 15px;
+      display: none;
+      }
 
 .cart-page .cart-list-item .cart-item {
   padding: 5px;
@@ -12932,8 +12941,10 @@ dd {
     .page-search .header-form-search form .item-input-inset {
       padding: 0; }
     .page-search .header-form-search form .button {
-      border-color: #2b2b2b;
-      height: 32px; }
+      border-color: #022f45;
+      height: 32px; 
+      border-radius: 8px;
+}
   .page-search .header-form-search + ion-content {
     top: 44px; }
 
