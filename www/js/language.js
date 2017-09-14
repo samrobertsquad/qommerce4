@@ -58,6 +58,7 @@ angular.module('starter')
 	Existing_Customer_TEXT: 'Existing Customer',
 	Continue_as_guest_TEXT: 'Continue as guest',
 	is_required_TEXT: 'is required',
-	CALL_US_TEXT: 'Call us now'
+	CALL_US_TEXT: 'Call us now',
+	QOMMERCE_TEXT: 'Qommerce'
 })
 ;
