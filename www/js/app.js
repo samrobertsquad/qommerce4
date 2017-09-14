@@ -52,6 +52,16 @@ angular.module('starter', ['ionic','ionic.service.core', 'starter.controllers', 
     templateUrl: 'templates/tabs.html'
   })
   
+  .state('tab.splash', {
+    url: '/splash',
+    views: {
+      'mainContent': {
+        templateUrl: 'templates/tab-splash.html',
+        controller: 'SplashCtrl'
+      }
+    }
+  })
+
   .state('tab.home', {
     url: '/home',
     views: {
@@ -234,6 +244,6 @@ angular.module('starter', ['ionic','ionic.service.core', 'starter.controllers', 
   ;
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/home');
+  $urlRouterProvider.otherwise('/tab/splash');
 
 });
