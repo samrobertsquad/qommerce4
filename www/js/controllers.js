@@ -752,6 +752,17 @@ angular.module('starter.controllers', ['ionic-ratings'])
 	};
 })
 
+.controller('SplashCtrl', function($scope, $state, $ionicModal, AppService) {
+	$scope.appSettings = AppService.getAppSetting();
+	// consol
+		
+	$scope.showInfoWindow = function($infoWindowId) {
+		$scope.map.showInfoWindow($infoWindowId);
+	};
+
+	
+})
+
 .controller('CheckoutSuccessCtrl', function($scope, $state, $rootScope, $ionicHistory, OrderService) {
 	$scope.orderReceivedInfo = OrderService.getOrderReceivedInfo();
 	$scope.subTotal = 0;
