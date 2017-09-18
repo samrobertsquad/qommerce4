@@ -1,0 +1,80 @@
+<ion-modal-view class="modal-login is-modal">
+    <ion-content class="padding" style="background-image: url(img/bg.png);">
+    	<button class="button button-close" ng-click="closeModalMenu()">
+			<i class="ion-android-close"></i>
+		</button>
+		
+		
+			
+			
+<div style="padding-top: 50%;"></div>
+<div class = "row" align="center">
+   <div class = "col">
+					<a href="#/tab/home" ng-click="closeModalMenu()" style="text-decoration: none; color: #18739f;"><i class="icon ion-ios-home" style="font-size: 40px;"></i><br>
+					{{$root.appLanguage.HOME_TEXT}}</a>
+				</div>
+   <div class = "col">
+					<a href="#/tab/categories" ng-click="closeModalMenu()" style="text-decoration: none; color: #18739f;"><i class="icon ion-social-buffer" style="font-size: 40px;"></i><br>
+					{{$root.appLanguage.CATEGORIES_TEXT}}</a>
+				</div>
+   <div class = "col">
+					<a href="#/tab/search" ng-click="closeModalMenu()" style="text-decoration: none; color: #18739f;"><i class="icon ion-ios-search" style="font-size: 40px;"></i><br>
+					{{$root.appLanguage.SEARCH_TEXT}}</a>
+				</div>
+</div>
+<div class = "row" align="center">
+   <div class = "col">
+					<a href="#/tab/aboutus" ng-click="closeModalMenu()" style="text-decoration: none; color: #18739f;"><i class="icon ion-person" style="font-size: 40px;"></i><br>
+					{{$root.appLanguage.ABOUT_US_TEXT}}</a>
+				</div>
+   <div class = "col">
+					<a href="#/tab/terms" ng-click="closeModalMenu()" style="text-decoration: none; color: #18739f;"><i class="icon ion-document-text" style="font-size: 40px;"></i><br>
+					{{$root.appLanguage.TERM_AND_CONDITIONS_TEXT}}</a>
+				</div>
+   <div class = "col">
+					<a href="#/tab/contactus" ng-click="closeModalMenu()" style="text-decoration: none; color: #18739f;"><i class="icon ion-email" style="font-size: 40px;"></i><br>
+					{{$root.appLanguage.CONTACT_US_TEXT}}</a>
+				</div>
+</div>
+<div class = "row" align="center">
+   <div class = "col">
+					<a ng-if="isLoggedIn()===true" href="#/tab/account" ng-click="closeModalMenu()" style="text-decoration: none; color: #18739f;"><i class="icon ion-locked" style="font-size: 40px;"></i><br>
+					{{$root.appLanguage.MY_ACCOUNT_TEXT}}</a>
+				</div>
+   <div class = "col">
+					<a ng-if="isLoggedIn()===true" href="#/tab/orders" ng-click="closeModalMenu()" style="text-decoration: none; color: #18739f;"><i class="icon ion-ios-cart" style="font-size: 40px;"></i><br>
+					{{$root.appLanguage.MY_ORDERS_TEXT}}</a>
+				</div>
+	<div class = "col">
+					<a ng-if="isLoggedIn()===true" menu-close ng-click="doLogout()" href="#/tab/home" style="text-decoration: none; color: #18739f;"><i class="icon icon ion-power" style="font-size: 40px;"></i><br>
+					{{$root.appLanguage.LOGOUT_TEXT}}</a>
+				</div>
+</div>
+
+<div class="header-menu" ng-if="isLoggedIn()===false">
+				<div class="row text-center">
+					<div class="col-50" style="background-color: #18739f; border-radius: 10px; padding: 10px;">
+						<a href="#/tab/home" class="link login" menu-close ng-click="openModalLogin()" style="text-decoration: none; color: #fff;">
+							{{$root.appLanguage.LOGIN_TEXT}}
+						</a>
+					</div>&nbsp;&nbsp;
+					<div class="col-50" style="background-color: #fff; border-radius: 10px; padding: 10px; border-style: solid; border-width: 1px;">
+						<a href="#/tab/home" class="link register" menu-close ng-click="openModalRegister()()" style="text-decoration: none; color: #18739f;">
+							{{$root.appLanguage.REGISTER_TEXT}}
+						</a>
+					</div>
+				</div>
+			</div>
+			<ion-list>
+			    
+				<ion-item onclick="window.plugins.socialsharing.share('Qommerce', null, null, 'http://qommerceapp.com');" ng-click="closeModalMenu()" style="border-style: none; text-align: center; vertical-align: text-bottom; background-color: transparent;">
+					<i class="icon ion-android-share-alt"></i><br>
+					{{$root.appLanguage.SHARE_THE_APP_TEXT}}
+				</ion-item>
+				
+			</ion-list>
+		
+	
+		
+    </ion-content>
+</ion-modal-view>
