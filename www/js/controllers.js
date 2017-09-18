@@ -44,6 +44,17 @@ angular.module('starter.controllers', ['ionic-ratings'])
 		$state.go('tab.categories');
 		return true;
 	};
+	$ionicModal.fromTemplateUrl('templates/modal/menu.html', {
+		scope: $scope
+	}).then(function(modal) {
+		$scope.mMenu = modal;
+	});
+	$scope.openModalMenu = function() {
+		$scope.mMenu.show();
+	};
+	$scope.closeModalMenu = function() {
+		$scope.mMenu.hide();
+	};
 	$ionicModal.fromTemplateUrl('templates/modal/login.html', {
 		scope: $scope
 	}).then(function(modal) {
