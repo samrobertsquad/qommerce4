@@ -12205,6 +12205,22 @@ a.button {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp; }
 
+.is-header .topmenu {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-left: 10px;
+  position: relative;
+}
+
+.is-header .topmenu i {
+  line-height: 47px;
+    font-size: 27px;
+    color: #022f45;
+    display: inline-block;
+    margin-top: 3px;
+}
+
 .is-header .shoppingcart {
   margin: 0;
   padding: 0;
@@ -12381,7 +12397,7 @@ a.button {
           display: block;
           color: #fff; }
         .is-slidemenu .header-menu.logged-in .info .name {
-          text-transform: uppercase;
+          text-transform: none;
           margin: 10px 0 5px;
           font-size: 15px; }
         .is-slidemenu .header-menu.logged-in .info .phone [class*="icon-"] {
