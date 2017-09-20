@@ -15,11 +15,19 @@ navigation history that also transitions its views in and out.
 						<span class="count" ng-if="$root.cartQuantity > 0">{{$root.cartQuantity}}</span>
 					</a>
 				</div>
-      		</ion-nav-buttons>
-      		<ion-nav-buttons side="left">
 				<div id="topmenu" class="topmenu">
 						<i class="ion-grid" ng-click="openModalMenu()"></i>
 				</div>
+      		</ion-nav-buttons>
+      		<ion-nav-buttons side="left">
+      		    <div class="header-menu logged-in clearfix" ng-if="isLoggedIn()===false"><img class="home-logo" src="img/logo.png" style="margin-top: 7px;"></div>
+				<div class="header-menu logged-in clearfix" ng-if="isLoggedIn()===true">
+				<a href="#/tab/account" class="avatar" style="text-decoration: none; color: #2b2b2b;">
+					<img actual-src="{{userInfo.avatar}}" ng-src="img/placeholder.png" style="width: 50px; height: 50px; border-radius: 100%; border-color: #444; border-style: solid; border-width: 2px;">&nbsp;&nbsp;<span class="name" ng-bind-html="getUserDisplay()"></span>
+				</a>
+					
+				
+			</div>
       		</ion-nav-buttons>
 		</ion-nav-bar>
 
