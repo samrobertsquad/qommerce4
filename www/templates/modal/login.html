@@ -6,7 +6,7 @@
 		<div class="logo">
 			<img src="img/logo.png">
 		</div>
-		<form name="loginForm" ng-submit="doLogin(loginForm)" novalidate="">
+		<form name="loginForm" ng-submit="doLogin(loginForm)" novalidate="" ng-click="closeModalMenu()">
 			<div class="list form-action">
 				<label class="item item-input">
 					<input type="text" name="user_login" ng-model="loginData.user_login" required placeholder="{{$root.appLanguage.USERNAME_TEXT}} / {{$root.appLanguage.EMAIL_TEXT}}">
